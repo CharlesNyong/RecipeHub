@@ -1,0 +1,456 @@
+.mainMenu{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    height: 30%;
+    width: 70%;
+    margin: -15% 0 0 -25%;
+}
+
+u{
+    color: #0074D9;
+}
+
+/* style for menu links */
+.nav-menu li a{
+    padding: 20px;
+	list-style:none;
+}
+.errorDiv{
+    width: 30%; 
+    top: 40px;
+    margin-left: 660px; 
+    text-align: center;
+}
+
+.jumbotron button a{
+    color: white;
+}
+
+.recipeImage{
+    /* padding: 0px 0px 10px 15px; */
+    /* padding-right: -10px; */
+    padding-right: 11px;
+    float: left;
+    margin-top: 19px;
+    width: 300px;
+    height: 200px;
+}
+#searchBox{
+    border-radius: 4px;
+}
+.recipeImageDiv{
+    /* border: black 1px solid; */
+    padding-right: 5%;
+    margin-right: 0%;
+    /* padding-top: -4%; */
+    margin-bottom: 8%;
+}
+
+/* implement a vertical scroll with this */
+.recipeBox{
+    overflow-y: scroll !important;
+    overflow-x:hidden !important;
+    /* float:left; */
+    height: 900px;
+    width: 111%;
+    /* margin-right: 80% !important; */
+    /* border: 1px solid black; */
+}
+
+.searchField{
+   border: 0.5px solid black; 
+}
+
+.countryFiltertable{
+    margin: 0;
+    margin-right: 15px;
+    /* width: 90%; */
+    /* border-style: solid; */
+    border-width: 0.9px;
+    border-radius: 10px;
+    height: 45%;
+}
+
+/* .countryFiltertable #recipeCountry{
+    display: inline !important;
+} */
+
+.countryFiltertable .nice-select{
+    /* float: left !important; */
+    display: inline !important;
+    /* visibility: hidden !important; */
+}
+
+.nice-select{
+    width: 20% !important;
+    clear:none !important;
+}
+
+/* use to increase the width of the li  drop down options  */
+.nice-select #recipeCountry li{
+    padding-left: 60px !important;
+    padding-right: 47px !important;
+}
+
+.recipeItems a{
+    font-weight: bold;
+    color: black;
+}
+
+/* background color for recipes listed on home page */
+.recipeItems .single-menu{
+    background-color: inherit;
+}
+
+
+.recipeItems{
+    border-style: solid;
+    border-width: 0.9px;
+    border-radius: 10px;
+    background-color: rgb(227, 231, 235);
+    box-shadow: 4px 4px grey;
+    /* margin-right: 3px;
+    margin-left: 3px; */
+    width: 48%;
+    /* float: left; */
+    /* margin: 0px 0px 10px; */
+    margin-left: 1px;
+    /* margin-right: 1px; */
+}
+
+.breakfast{
+    margin-left: 1px !important;
+}
+
+.recipeItemsBox{
+    padding-left: 27px;
+}
+
+
+.recipeItems .single-menu {
+    height: 200px  !important;
+}
+
+.form{
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    height: 30%;
+    width: 40%;
+    margin: -15% 0 0 -25%;
+}
+
+body{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: #d3d3d3;
+    /* font-family: 'Oxygen', sans-serif; */
+}
+
+.main{
+    margin-top: 70px;
+}
+
+h1.title { 
+	font-size: 50px;
+	font-family: 'Passion One', cursive; 
+	font-weight: 400; 
+}
+
+hr{
+	width: 10%;
+	color: #fff;
+}
+
+.form-group{
+	margin-bottom: 15px;
+}
+.panel-heading {
+    padding-top: 0px;
+    /* padding-left: 18px; */
+    /* border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; */
+}
+/* login title */
+.panel-title {
+    /* margin-top: 0; */
+    /* margin-left: 150px; */
+    margin-bottom: 10;
+    font-size: 16px;
+    color: inherit
+}
+
+/* Rules for field label */
+
+label{
+	margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.input-group-addon, .input-group-btn {
+    /* width: 1%; */
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.input-group-addon {
+    padding: 9px 17px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    display: table-cell;
+}
+
+.input-group-addon:first-child{
+    border-right: 0;
+    border-radius: 3px;
+}
+
+/* CSS for the form itself */
+.main-login{
+ 	background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.main-center{
+ 	margin-top: 20px;
+ 	margin-left: 380px;
+ 	max-width: 1600px;
+    padding: 50px 50px;
+
+}
+
+.login-button{
+	margin-top: 5px;
+}
+
+.login-register{
+	font-size: 11px;
+	text-align: center;
+}
+
+/* media queries */
+/* @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+} */
+
+@media  only screen and (min-width: 315px) {
+    .container {
+      max-width: 600%;
+    }
+
+    .recipeItems p{
+        display: none; 
+    }
+
+    .recipeItems{
+        max-width: 250%;
+        border-radius: 20%;
+        /* font-size: 0.5vw;
+        font-weight: normal;  */
+    }
+
+    .recipeImage{
+        max-width: 120%;
+        border-radius: 20%;
+        margin-right: 4px;
+        margin-left: -5%;
+        margin-top: -2px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .recipeItems p{
+        display: none; 
+    }
+
+    .recipeItems{
+        max-width: 450%;
+        border-radius: 20%;
+    }
+
+    .recipeImage{
+        max-width: 120%;
+        border-radius: 20%;
+        margin-right: 4px;
+        margin-left: -5%;
+        margin-top: -2px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .recipeItems p{
+        display: none; 
+    }
+
+    .recipeItems{
+        max-width: 250%;
+        border-radius: 20%;
+    }
+
+    .recipeImage{
+        max-width: 130px;
+        border-radius: 20%;
+        margin-left: -5%;
+        margin-top: -2px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+
+    /* .recipeItems{
+        max-width: 400%;
+        border-radius: 14%;
+    } */
+
+    /* .recipeImage{
+        max-width: 200%;
+        border-radius: 20%;
+        margin-right: 90px;
+        margin-left: 6%;
+        margin-top: 12px;
+    } */
+
+    .recipeImage{
+        /* padding: 0px 0px 10px 15px; */
+        /* padding-right: -10px; */
+        padding-right: 11px;
+        float: left;
+        margin-top: 19px;
+        width: 240%;
+        height: 200px;
+    }
+    
+
+    .recipeItems{
+        border-style: solid;
+        border-width: 0.9px;
+        border-radius: 10px;
+        background-color: rgb(227, 231, 235);
+        box-shadow: 4px 4px grey;
+        /* margin-right: 3px;
+        margin-left: 3px; */
+        width: 48%;
+        /* float: left; */
+        /* margin: 0px 0px 10px; */
+        margin-left: 1px;
+        /* margin-right: 1px; */
+    }
+
+  }
+ 
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+
+    /* .recipeItems p{
+        display: block; 
+    } */
+
+    .recipeImageDiv{
+        /* border: black 1px solid; */
+        padding-right: 5%;
+        margin-right: 0%;
+        /* padding-top: -4%; */
+        margin-bottom: 8%;
+        height: 150%;
+    }
+    
+    .recipeImage{
+        /* padding: 20px 5px 0px 15px; */
+        padding-top: 20px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        /* padding-right: -10px; */
+        /* padding-right: 11px; */
+        float: left;
+        margin-bottom: -12px;
+        margin-right: 12px;
+        /* margin-left: 120px; */
+        max-width: 50%;
+        border: 1px round black;
+        border-radius: 35px;
+        /* border: solid 2px black; */
+        height: 220px;
+    }
+    
+
+    .recipeItems{
+        border-style: solid;
+        border-width: 0.9px;
+        border-radius: 10px;
+        background-color: rgb(227, 231, 235);
+        box-shadow: 4px 4px grey;
+        /* margin-right: 3px;
+        margin-left: 3px; */
+        width: 48%;
+        /* float: left; */
+        /* margin: 0px 0px 10px; */
+        margin-left: 1px;
+        /* margin-right: 1px; */
+    }
+    
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+
+    .recipeImage{
+        padding: 0px 0px 10px 15px;
+        /* padding-right: -10px; */
+        padding-right: 11px;
+        float: left;
+        margin-top: 19px;
+        margin-right: 12px;
+        /* margin-left: 120px; */
+        max-width: 50%;
+        height: 220px;
+        border: 1px round black;
+        border-radius: 35px;
+    }
+
+  }
+
+  
+ 

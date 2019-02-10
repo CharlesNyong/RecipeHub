@@ -1,0 +1,76 @@
+<%include partials/header%>
+<% console.log(typeof(error));
+if(typeof(error) === Object || typeof(error) == "object"){
+    //console.log(typeof(error) + " err msg: " + error[0].msg);
+    for(i=0; i<error.length; i++){ %>
+        <div class="alert alert-danger container errorDiv">
+            <h4><%= error[i].msg %></h4>
+        </div>
+    <%}
+    }
+    else{
+        if(error !== ""){
+            //console.log("String error: " + error[0].msg);
+            %>
+            <div class="alert alert-danger container errorDiv">
+                <h4><%=error%></h4>
+            </div>
+        <%}
+    }
+%>
+<div class="container">
+    <!-- <form class="form-signin" method="POST" action="/recipe/authenticate">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputUserName">Username:</label><br/>
+        <input type="text" class="form-control" name="inputUserName" required autofocus><br/>
+        <label for="email">Email:</label><br/>
+        <input type="text" class="form-control" name="email" required><br/>
+        <label for="inputPassword">Password:</label><br/>
+        <input type="password" class="form-control" placeholder="Password" name="inputPassword"><br/>
+        <button type="submit" class="btn btn-default">Sign in</button>
+    </form> -->
+    <div class="row main">
+        <div class="main-login main-center">
+            <div class="text-center">
+                <h1 class="title">Login</h1>   
+            </div>
+            <br>
+            <form class="form-horizontal" method="POST" action="/recipe/authenticate">
+                <div class="form-group">
+                    <label for="username" class="cols-sm-2 control-label">Your Username</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="inputUserName" placeholder="Enter your Username" required autofocus/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email" required/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Password</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" name="inputPassword" id="password"  placeholder="Enter your Password"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group ">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%include partials/footer%>
