@@ -1,7 +1,7 @@
 var dbConfig = {
     host: "localhost",
     user: "root",
-    password: "Wils1996",
+    password: 
     database: "recipehub"
 }
 
