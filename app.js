@@ -35,7 +35,7 @@ let emailTransporter = nodemailer.createTransport({
     port: 25,
     auth:{
         user: "recipehub20@gmail.com",
-        pass: 
+        pass: "******"
     },
     tls:{
         rejectUnauthorized: false
